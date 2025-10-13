@@ -1,0 +1,195 @@
+               			     Web-Dev Assignment-1
+
+
+Ques 1: Explain the difference between frontend, backend, and full-stack development with suitable real-world examples.
+
+Ans: Frontend Development:-
+	Frontend is the part of a website or app that users directly see and interact with. It includes everything visible on the screen — like buttons, images, forms, colors, and layouts.
+	Example: When you open Amazon or Flipkart, all the product images, search bars, and the “Add to Cart” button are part of the frontend.  Common technologies: HTML, CSS, JavaScript, React, Angular.
+
+     Backend Development:-
+	Backend is the hidden part that works behind the website. It handles the logic, database, and communication between the website and the server.
+	Example: When you click “Add to Cart,” the backend decides which product was added, stores it in your account, and updates the total price. Common technologies: Node.js, Java, Python, PHP, MySQL, MongoDB.
+
+     Full-Stack Development:-
+	A full-stack developer can work on both frontend and backend. They design the user interface and also build the server, database, and application logic.
+	Example: If a single developer creates both the login page (frontend) and the system that stores login data (backend), that person is a full-stack developer. Common stacks: MERN (MongoDB, Express, React, Node.js).
+
+Ques2: Create a simple diagram showing how the client-server model works in web architecture.
+
+Ans:             +------------------+
+          	 |     Client       |
+          	 | (Browser/User)   |
+          	 +--------+---------+
+                  	  |
+                   	  | 
+        		 	  +--------+---------+
+          			   |      Server      |
+         			  | (Backend System) |
+          			  +--------+---------+
+                 				 |
+                   				 | 
+          			 +--------+---------+
+         			   |    Database      |
+         			  |  (Data Storage)   |
+         			  +------------------+
+                  				 |
+                  				 | 
+          			 +------------------+
+          			   |     Client       |
+          			  | (Shows Result)   |
+          			 +------------------+
+
+Ques3: Describe how a browser requests and displays a web page from a web server.
+
+Ans: When you type a website address in your browser and press Enter, the browser asks the web server for the webpage. Here’s how it works:
+
+Sending the Request:
+The browser sends a request over the internet saying, “Hey, I need this webpage!” The request reaches the server that hosts the site.
+
+Server Processes:
+The server receives the request, fetches any necessary data from its database or files, and prepares the webpage to send back.
+
+Sending the Response:
+The server sends the webpage back to the browser. This usually includes HTML, CSS, JavaScript, and images.
+
+Displaying the Page:
+The browser reads these files and renders the page so you can see the content and interact with it, like clicking buttons or scrolling.
+
+Ques4: Identify and list the tools required to set up a web development environment. Explain the purpose of each.
+	
+Ans: To start web development, you need a few essential tools. Here’s a list with their purpose:
+
+Code Editor / IDE
+
+This is where you write your code—HTML, CSS, JavaScript, or backend languages. A good editor highlights syntax, helps with auto-completion, and makes coding faster.
+
+2. Web Browser
+Browsers are used to test and view your webpages. They render HTML, CSS, and JavaScript so you can see how your website looks and behaves.
+
+3. Local Server / Development Server 
+
+For backend development, you need a server to run your code locally. It helps you test dynamic websites and databases on your own computer before publishing online.
+
+4. Version Control System
+
+This keeps track of your code changes, lets you revert to earlier versions, and helps collaborate with others on projects.
+
+5. Web Browser Developer Tools 
+
+These tools let you inspect your webpage, debug JavaScript, check network requests, and experiment with styles in real-time.
+
+6. Package Managers
+
+These help you install libraries, frameworks, and tools that make development easier and faster.
+
+7. Optional: Database 
+
+If your website stores data like user accounts or posts, you’ll need a database to save and manage that information.
+
+Ques5: Explain what a web server is and give examples of commonly used servers.
+
+Ans: A web server is a computer or software that stores website files (like HTML, CSS, JavaScript, images) and delivers them to users when they request a webpage. Basically, when you type a website address in your browser, the browser sends a request to the web server, and the server sends back the webpage so you can see it.
+
+Examples of commonly used web servers:
+
+	Apache HTTP Server – One of the most popular and widely used servers.
+
+	Nginx – Known for handling lots of traffic efficiently.
+
+	Microsoft IIS – Web server used mainly with Windows servers.
+
+Ques6: Define the roles of a frontend developer, backend developer, and database administrator in a project.
+
+Ans: Frontend Developer:
+
+	Responsible for everything the user sees and interacts with on a website or app.
+
+	Works with HTML, CSS, JavaScript, and frameworks like React or Angular to design pages, buttons, forms, and make the interface user-friendly.
+
+     Backend Developer:
+
+	Handles the “behind-the-scenes” part of a website that users don’t see.
+
+	Works with servers, APIs, and backend languages like Java, Python, Node.js to process requests, manage authentication, and connect the frontend to the database.
+
+     Database Administrator (DBA):
+
+	Manages the database where all the project’s data is stored.
+
+	Ensures data is organized, secure, and efficiently retrievable. Handles backups, performance, and data integrity.
+
+Ques7: Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a screenshot of the setup.
+
+Ans: 
+
+Ques8: Explain the difference between static and dynamic websites. Provide an example of each.
+
+Ans: Static Website:
+
+	A static website has fixed content that does not change unless the developer manually updates it.
+
+	It’s usually made with simple HTML, CSS, and maybe some images, and every visitor sees the same content.
+
+	Example: A personal portfolio website or a company’s basic “About Us” page.
+
+     Dynamic Website:
+
+	A dynamic website can change content automatically based on user interaction, time, or data from a database.
+
+	It uses backend programming like PHP, Python, or Node.js along with a database to show different content to different users.
+
+	Example: Facebook, Amazon, or any e-commerce website where content updates frequently.
+
+Ques9: Research and list five web browsers. Explain how rendering engines differ between them.
+
+Ans: Five Popular Web Browsers:
+
+	Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, Opera
+
+     Rendering Engines and How They Differ:
+
+	Rendering Engine is the part of a browser that reads website code (HTML, CSS, JavaScript) and displays it on the screen.
+
+	Chrome & Edge (Chromium-based) use Blink, which is fast, supports modern web standards, and is good at handling complex web pages.
+
+	Firefox uses Gecko, which focuses on web standards compliance and flexibility.
+	
+	Safari uses WebKit, optimized for Apple devices and energy efficiency.
+
+	Opera also uses Blink (like Chrome) but may include extra features like a built-in VPN.
+
+Ques10: Draw a labeled diagram showing the basic web architecture flow — client, server, database, and APIs.
+
+Ans:      +------------------+
+          |      Client      |
+          |  (Browser/User)  |
+          +--------+---------+
+                   |
+                   | Sends Request (HTTP/HTTPS)
+                   v
+          +--------+---------+
+          |      Server      |
+          |  (Backend/API)   |
+          +--------+---------+
+                   |
+                   | Processes Request & Calls API
+                   v
+          +--------+---------+
+          |       API        |
+          | (Business Logic) |
+          +--------+---------+
+                   |
+                   | Fetches / Updates Data
+                   v
+          +------------------+
+          |     Database     |
+          |   (Data Storage) |
+          +------------------+
+                   |
+                   | Sends Response
+                   v
+          +------------------+
+          |      Client      |
+          |  (Displays Data) |
+          +------------------+
