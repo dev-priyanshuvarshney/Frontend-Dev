@@ -17,28 +17,33 @@ Ans: Frontend Development:-
 
 Ques2: Create a simple diagram showing how the client-server model works in web architecture.
 
-Ans:             +------------------+
-          	 |     Client       |
-          	 | (Browser/User)   |
-          	 +--------+---------+
-                  	  |
-                   	  | 
-        		 	  +--------+---------+
-          			   |      Server      |
-         			  | (Backend System) |
-          			  +--------+---------+
-                 				 |
-                   				 | 
-          			 +--------+---------+
-         			   |    Database      |
-         			  |  (Data Storage)   |
-         			  +------------------+
-                  				 |
-                  				 | 
-          			 +------------------+
-          			   |     Client       |
-          			  | (Shows Result)   |
-          			 +------------------+
+Ans:      +------------------+
+          |      Client      |
+          |  (Browser/User)  |
+          +--------+---------+
+                   |
+                   | 1️⃣ Sends Request (e.g., open a website)
+                            v
+         	   +--------+---------+
+          		|      Server      | 
+          	  |  (Backend System) |
+          	  +--------+---------+
+                  		  |
+                   | 2️⃣ Processes request, fetches data
+                   v
+          +--------+---------+
+          |     Database     |
+          |   (Data Storage) |
+          +--------+---------+
+                   |
+                   | 3️⃣ Sends Data Back
+                   v
+          +------------------+
+          |      Client      |
+          |   (Shows Result) |
+          +------------------+
+
+
 
 Ques3: Describe how a browser requests and displays a web page from a web server.
 
