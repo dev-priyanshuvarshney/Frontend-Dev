@@ -1,0 +1,90 @@
+/* General reset and layout */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e3a8a;
+  padding: 15px 40px;
+  border-bottom: 3px solid #2563eb;
+}
+
+/* Logo styling */
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Nav links styling */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Hover and active link styling */
+.nav-links a:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+.nav-links a.active {
+  background-color: #3b82f6;
+  border-bottom: 2px solid white;
+}
+
+/* Responsive navbar (below 700px) */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Main content section */
+.content {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}

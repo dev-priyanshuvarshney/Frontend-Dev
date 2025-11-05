@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 1rem 0;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem;
+}
+
+.box {
+  background-color: #fff;
+  width: 220px;
+  padding: 20px; 
+  border-width: 4px;
+  border-style: solid;
+  border-color: #999;
+  border-radius: 8px;
+  text-align: center;
+  transition: border-color 0.4s ease; /* Smooth hover transition */
+}
+
+/* Border Variations */
+.solid-border {
+  border-style: solid;
+}
+
+.dashed-border {
+  border-style: dashed;
+}
+
+.double-border {
+  border-style: double;
+}
+
+.groove-border {
+  border-style: groove;
+  border-radius: 20px; /* Demonstrating rounded corners */
+}
+
+/* Hover Effect */
+.box:hover {
+  border-color: #007acc;
+}
+
+/* Footer */
+footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
