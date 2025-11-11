@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading {
+            text-align: center;
+        }
+
+        #container {
+            height: 200px;
+            width: 600px;
+            border: 2px solid black;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3 class="heading">Image Gallery</h3>
+    <div id="container">
+        text
+    </div>
+    <button onclick="getdata()">Get data</button>
+
+    <script>
+
+        function getdata() {
+
+            
+            let name = "GLA University"
+            let exp = 10;
+            let content = `
+        Data is comming through javascript ${name} ${exp}
+
+        `
+            document.getElementById("container").innerHTML = content
+
+        }
+
+    </script>
+</body>
+
+</html>
